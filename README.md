@@ -1,16 +1,11 @@
 # state_provider
 
-A new Flutter project.
+Como utiliza o pacote provider para gerenciar o estado. 
+A aplicação apresenta um texto que alterna ao pressionar um botão.
 
-## Getting Started
+Como Funciona
+TextModel: Classe que estende ChangeNotifier e mantém o estado do texto e sua cor.
 
-This project is a starting point for a Flutter application.
+Provider: Utiliza-se ChangeNotifierProvider para fornecer a instância de TextModel para a aplicação.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+setState: Não é utilizado diretamente; em vez disso, notifyListeners é chamado para atualizar a UI.
